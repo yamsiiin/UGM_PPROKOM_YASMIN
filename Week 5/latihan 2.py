@@ -4,6 +4,7 @@ while(True):
     pengeluaran=int(input("Masukkan pengeluaran hari ini(0 untuk keluar):"))
     if pengeluaran==0: #untuk berhenti
         print("Sisa saldo = ",sisa) #sisa bila diberhentikan
+        break
     sisa=sisa-pengeluaran
     if sisa<0:
         print("Saldo tidak cukup")
